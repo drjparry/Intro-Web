@@ -1,4 +1,4 @@
-require 'sinatra'
+ require 'sinatra'
 require 'shotgun'
 
 set :session_secret, 'super secret'
@@ -19,7 +19,6 @@ end
 get '/named-cat' do
 p params
 @name = params[:name]
- erb(:index)
-
-  end
+erb(:index)
+end
 
